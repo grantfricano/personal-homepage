@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@import url("https://use.typekit.net/tpg1kbo.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.button-details {
+  width: 100px;
+  height: 100px;
+  background-color:rgba(174, 184, 152, 0.275);
+  font-family: 'bebas-neue-by-fontfabric' !important;
+  font-size: 20pt;
+  color: #cecfcb;
+  border: none;
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+.button-details:hover{
+  background-image: url('https://thumbs.dreamstime.com/b/red-rose-top-down-water-droplets-petals-against-black-background-beautiful-rain-shallow-depth-field-dark-124099910.jpg');
+  background-size: 100px 100px;
+  filter: brightness(50%);
+}
+.top-left {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  line-height: 50pt;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 200px;
+  left: 70px;
+  line-height: 50pt;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  position: relative;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.image {
+  max-width: 100%;
+  filter: brightness(40%);
 }
 
-.App-link {
-  color: #61dafb;
+.firstname {
+  
+  color: #D9D8C3;
+  font-family: 'bebas-neue-by-fontfabric' !important;
+  font-size: 80pt;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lastname {
+  color: #AEB898;
+ font-family: 'bebas-neue-by-fontfabric' !important;
+ font-size: 64pt;
+ font-weight: 300; 
 }
