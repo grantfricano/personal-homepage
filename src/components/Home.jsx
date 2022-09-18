@@ -10,22 +10,30 @@ const motorcyclePicture1 = new URL('../images/SF-10.jpg', import.meta.url);
 class Home extends Component {
 
     state = {
-        backgroundImage: motorcyclePicture
+        backgroundImage: motorcyclePicture,
+        count: 2
     };
 
     changeBackgroundImage = (image) => {
         this.setState({ backgroundImage: image });
     }
 
+    getClassName() {
+        return this.state.backgroundImage === motorcyclePicture ? 'firstname-home top-left' : 'firstname-black top-left';
+    }
+
+    getClassLastName() {
+        return this.state.backgroundImage === motorcyclePicture ? 'lastname' : 'lastname-black';
+    }
+
 render() {
+
 
   return ( 
     <div>
-        <CSSTransition classNames="fade" transitionEnterTimeout={500} transitionLeaveTimeout={500}>
-            <img class='image' id='backgroundPic' src={this.state.backgroundImage}></img>
-        </CSSTransition>
-     
-        <div class="firstname top-left">Grant<br/><span class="lastname">Fricano</span></div>
+        
+        <img class='image' id='backgroundPic' src={this.state.backgroundImage}></img>
+        <div class={this.getClassName()}>Grant<br/><span class={this.getClassLastName()}>Fricano</span></div>
         <div class='bottom-left'>
             <div>
                 <button class='btn btn-primary button-details' onClick={() => this.changeBackgroundImage(motorcyclePicture1)}>About</button>

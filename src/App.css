@@ -43,7 +43,7 @@
   filter: brightness(40%);
 }
 
-.firstname {
+.firstname-home {
   
   color: #D9D8C3;
   font-family: 'bebas-neue-by-fontfabric' !important;
@@ -51,8 +51,24 @@
   font-weight: 700;
 }
 
+.firstname-black {
+  
+  color: #c0c0c0;
+  font-family: 'bebas-neue-by-fontfabric' !important;
+  font-size: 80pt;
+  font-weight: 700;
+}
+
+
 .lastname {
   color: #AEB898;
+ font-family: 'bebas-neue-by-fontfabric' !important;
+ font-size: 64pt;
+ font-weight: 300; 
+}
+
+.lastname-black {
+  color: #81817f;
  font-family: 'bebas-neue-by-fontfabric' !important;
  font-size: 64pt;
  font-weight: 300; 
